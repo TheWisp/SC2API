@@ -1,0 +1,272 @@
+\hypertarget{class_s_c2_a_p_i_1_1_unit}{}\section{S\+C2\+A\+PI\+:\+:Unit Class Reference}
+\label{class_s_c2_a_p_i_1_1_unit}\index{S\+C2\+A\+P\+I\+::\+Unit@{S\+C2\+A\+P\+I\+::\+Unit}}
+
+
+S\+C2\+A\+PI \hyperlink{class_s_c2_a_p_i_1_1_unit}{Unit} is an unreliable shell of the actual unit, representing the observable aspect of unit.  
+
+
+
+
+{\ttfamily \#include $<$S\+C2\+A\+P\+I\+Unit.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \hyperlink{class_s_c2_a_p_i_1_1_unit_ab1bca6383cac10ca0502097828ba3004}{Is\+Accessible} () const 
+\begin{DoxyCompactList}\small\item\em Determines whether the unit can be observed by local player. An unit is accessible when it\textquotesingle{}s alive and is not in fog of war or hidden. \end{DoxyCompactList}\item 
+Optional$<$ \hyperlink{struct_s_c2_a_p_i_1_1_point}{Point} $>$ \hyperlink{class_s_c2_a_p_i_1_1_unit_a524651fdec4942656f25e2ece4ea70f1}{Get\+Position} () const 
+\begin{DoxyCompactList}\small\item\em Gets unit\textquotesingle{}s current position on the map. \end{DoxyCompactList}\item 
+int \hyperlink{class_s_c2_a_p_i_1_1_unit_ac99df1c5d2b459590453bae3831824af}{Get\+Owner} () const 
+\begin{DoxyCompactList}\small\item\em Gets player owning the unit. \end{DoxyCompactList}\item 
+bool \hyperlink{class_s_c2_a_p_i_1_1_unit_a1386e50bfc8169799b4c0a5218921f3c}{Is\+Owned\+By\+Local\+Player} () const 
+\begin{DoxyCompactList}\small\item\em Determines whether unit is owned by the local player. \end{DoxyCompactList}\item 
+bool \hyperlink{class_s_c2_a_p_i_1_1_unit_a961023ad26d43f55beb70bada87e3c5e}{Is\+Owned\+By\+Enemy\+Player} () const 
+\begin{DoxyCompactList}\small\item\em Determines whether unit is owned by an enemy of local player. Note it would return true for an enemy unit in fog of war, despite not knowing its existence. \end{DoxyCompactList}\item 
+Optional$<$ double $>$ \hyperlink{class_s_c2_a_p_i_1_1_unit_a10e23bed2cb5ce11257d21fbb3f31a9d}{Get\+Life} () const 
+\begin{DoxyCompactList}\small\item\em Gets current life of unit. \end{DoxyCompactList}\item 
+Optional$<$ double $>$ \hyperlink{class_s_c2_a_p_i_1_1_unit_afe9fd89621459933c0e6563f8aace30e}{Get\+Shield} () const 
+\begin{DoxyCompactList}\small\item\em Gets current shield of unit. \end{DoxyCompactList}\item 
+Optional$<$ double $>$ \hyperlink{class_s_c2_a_p_i_1_1_unit_a5cd554713dca1acf5ddf3b178f6d62a0}{Get\+Energy} () const 
+\begin{DoxyCompactList}\small\item\em Gets current energy of unit. \end{DoxyCompactList}\item 
+std\+::string \hyperlink{class_s_c2_a_p_i_1_1_unit_a6428d9cfc5d7bc7a7260c468d296adc4}{To\+String} () const 
+\begin{DoxyCompactList}\small\item\em Gets string representation of unit for debugging purpose. \end{DoxyCompactList}\item 
+\hyperlink{class_s_c2_a_p_i_1_1_unit_a58ae87242b7df40f0f530d931fbc4006}{Unit} (Handle\+Id in\+Id)
+\begin{DoxyCompactList}\small\item\em Constructor. Internal usage only. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static Signal$<$ \hyperlink{class_s_c2_a_p_i_1_1_unit}{Unit}, int $>$ \& \hyperlink{class_s_c2_a_p_i_1_1_unit_ac7be2fb4fba92ea3bad9c08dc5691baa}{Signal\+Unit\+Created} ()
+\begin{DoxyCompactList}\small\item\em Fires when seeing any unit being created. Does not fire if the unit is inaccessible. Connect\+: void On\+Unit\+Created(\+Unit event\+Unit, int event\+Player\+Id); \end{DoxyCompactList}\item 
+static Signal$<$ \hyperlink{class_s_c2_a_p_i_1_1_unit}{Unit}, Optional$<$ \hyperlink{class_s_c2_a_p_i_1_1_unit}{Unit} $>$ $>$ \& \hyperlink{class_s_c2_a_p_i_1_1_unit_af46f80064fb5835c6c71156cfea3a1d0}{Signal\+Unit\+Destroyed} ()
+\begin{DoxyCompactList}\small\item\em Fires when seeing any unit being killed / destroyed. Does not fire if the unit is inaccessible. killer\+Unit is the unit who killed this unit, or empty value if doesn\textquotesingle{}t exist or when it is inaccessible. Connect\+: void On\+Unit\+Destroyed(\+Unit event\+Unit, Optional$<$\+Unit$>$ killer\+Unit); \end{DoxyCompactList}\item 
+static Signal$<$ \hyperlink{class_s_c2_a_p_i_1_1_unit}{Unit} $>$ \& \hyperlink{class_s_c2_a_p_i_1_1_unit_a1f959d229372b216839c019dc406c4d5}{Signal\+Unit\+Enter\+Vision} ()
+\begin{DoxyCompactList}\small\item\em Fires when any unit becomes visible to local player. Also fires when a visible unit is created. Connect\+: void On\+Unit\+Enter\+Vision(\+Unit event\+Unit); \end{DoxyCompactList}\item 
+static Signal$<$ \hyperlink{class_s_c2_a_p_i_1_1_unit}{Unit} $>$ \& \hyperlink{class_s_c2_a_p_i_1_1_unit_aaf7c098eff8a4ac7a8b8e02f13f4048e}{Signal\+Unit\+Leave\+Vision} ()
+\begin{DoxyCompactList}\small\item\em Fires when any unit becomes not visible to local player. Connect\+: void On\+Unit\+Enter\+Vision(\+Unit event\+Unit); \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Handle\+Id \hyperlink{class_s_c2_a_p_i_1_1_unit_a6b1854d0aed11be19a7a8c9849a78e79}{id}
+\begin{DoxyCompactList}\small\item\em Unique integer associated with this unit. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+bool {\bfseries operator$<$} (const \hyperlink{class_s_c2_a_p_i_1_1_unit}{Unit} \&lhs, const \hyperlink{class_s_c2_a_p_i_1_1_unit}{Unit} \&rhs)\hypertarget{class_s_c2_a_p_i_1_1_unit_a5313b8c40ac4198d2fc60bfbbb9b2f8a}{}\label{class_s_c2_a_p_i_1_1_unit_a5313b8c40ac4198d2fc60bfbbb9b2f8a}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+S\+C2\+A\+PI \hyperlink{class_s_c2_a_p_i_1_1_unit}{Unit} is an unreliable shell of the actual unit, representing the observable aspect of unit. 
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{S\+C2\+A\+P\+I\+::\+Unit@{S\+C2\+A\+P\+I\+::\+Unit}!Unit@{Unit}}
+\index{Unit@{Unit}!S\+C2\+A\+P\+I\+::\+Unit@{S\+C2\+A\+P\+I\+::\+Unit}}
+\subsubsection[{\texorpdfstring{Unit(\+Handle\+Id in\+Id)}{Unit(HandleId inId)}}]{\setlength{\rightskip}{0pt plus 5cm}S\+C2\+A\+P\+I\+::\+Unit\+::\+Unit (
+\begin{DoxyParamCaption}
+\item[{Handle\+Id}]{in\+Id}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [explicit]}}\hypertarget{class_s_c2_a_p_i_1_1_unit_a58ae87242b7df40f0f530d931fbc4006}{}\label{class_s_c2_a_p_i_1_1_unit_a58ae87242b7df40f0f530d931fbc4006}
+
+
+Constructor. Internal usage only. 
+
+
+
+\subsection{Member Function Documentation}
+\index{S\+C2\+A\+P\+I\+::\+Unit@{S\+C2\+A\+P\+I\+::\+Unit}!Get\+Energy@{Get\+Energy}}
+\index{Get\+Energy@{Get\+Energy}!S\+C2\+A\+P\+I\+::\+Unit@{S\+C2\+A\+P\+I\+::\+Unit}}
+\subsubsection[{\texorpdfstring{Get\+Energy() const }{GetEnergy() const }}]{\setlength{\rightskip}{0pt plus 5cm}Optional$<$double$>$ S\+C2\+A\+P\+I\+::\+Unit\+::\+Get\+Energy (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\hypertarget{class_s_c2_a_p_i_1_1_unit_a5cd554713dca1acf5ddf3b178f6d62a0}{}\label{class_s_c2_a_p_i_1_1_unit_a5cd554713dca1acf5ddf3b178f6d62a0}
+
+
+Gets current energy of unit. 
+
+\begin{DoxyReturn}{Returns}
+The energy point if the unit has energy and is accessible. 0 if the unit can not have energy. Empty value if the unit is inaccessible. 
+\end{DoxyReturn}
+\index{S\+C2\+A\+P\+I\+::\+Unit@{S\+C2\+A\+P\+I\+::\+Unit}!Get\+Life@{Get\+Life}}
+\index{Get\+Life@{Get\+Life}!S\+C2\+A\+P\+I\+::\+Unit@{S\+C2\+A\+P\+I\+::\+Unit}}
+\subsubsection[{\texorpdfstring{Get\+Life() const }{GetLife() const }}]{\setlength{\rightskip}{0pt plus 5cm}Optional$<$double$>$ S\+C2\+A\+P\+I\+::\+Unit\+::\+Get\+Life (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\hypertarget{class_s_c2_a_p_i_1_1_unit_a10e23bed2cb5ce11257d21fbb3f31a9d}{}\label{class_s_c2_a_p_i_1_1_unit_a10e23bed2cb5ce11257d21fbb3f31a9d}
+
+
+Gets current life of unit. 
+
+\begin{DoxyReturn}{Returns}
+The life point if the unit is accessible. Empty value otherwise. 
+\end{DoxyReturn}
+\index{S\+C2\+A\+P\+I\+::\+Unit@{S\+C2\+A\+P\+I\+::\+Unit}!Get\+Owner@{Get\+Owner}}
+\index{Get\+Owner@{Get\+Owner}!S\+C2\+A\+P\+I\+::\+Unit@{S\+C2\+A\+P\+I\+::\+Unit}}
+\subsubsection[{\texorpdfstring{Get\+Owner() const }{GetOwner() const }}]{\setlength{\rightskip}{0pt plus 5cm}int S\+C2\+A\+P\+I\+::\+Unit\+::\+Get\+Owner (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\hypertarget{class_s_c2_a_p_i_1_1_unit_ac99df1c5d2b459590453bae3831824af}{}\label{class_s_c2_a_p_i_1_1_unit_ac99df1c5d2b459590453bae3831824af}
+
+
+Gets player owning the unit. 
+
+\begin{DoxyReturn}{Returns}
+If the unit is currently accessible, returns owning player. Returns -\/1 otherwise. 
+\end{DoxyReturn}
+\index{S\+C2\+A\+P\+I\+::\+Unit@{S\+C2\+A\+P\+I\+::\+Unit}!Get\+Position@{Get\+Position}}
+\index{Get\+Position@{Get\+Position}!S\+C2\+A\+P\+I\+::\+Unit@{S\+C2\+A\+P\+I\+::\+Unit}}
+\subsubsection[{\texorpdfstring{Get\+Position() const }{GetPosition() const }}]{\setlength{\rightskip}{0pt plus 5cm}Optional$<${\bf Point}$>$ S\+C2\+A\+P\+I\+::\+Unit\+::\+Get\+Position (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\hypertarget{class_s_c2_a_p_i_1_1_unit_a524651fdec4942656f25e2ece4ea70f1}{}\label{class_s_c2_a_p_i_1_1_unit_a524651fdec4942656f25e2ece4ea70f1}
+
+
+Gets unit\textquotesingle{}s current position on the map. 
+
+\begin{DoxyReturn}{Returns}
+If the unit is currently accessible, returns current position. Otherwise returns an empty point. 
+\end{DoxyReturn}
+\index{S\+C2\+A\+P\+I\+::\+Unit@{S\+C2\+A\+P\+I\+::\+Unit}!Get\+Shield@{Get\+Shield}}
+\index{Get\+Shield@{Get\+Shield}!S\+C2\+A\+P\+I\+::\+Unit@{S\+C2\+A\+P\+I\+::\+Unit}}
+\subsubsection[{\texorpdfstring{Get\+Shield() const }{GetShield() const }}]{\setlength{\rightskip}{0pt plus 5cm}Optional$<$double$>$ S\+C2\+A\+P\+I\+::\+Unit\+::\+Get\+Shield (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\hypertarget{class_s_c2_a_p_i_1_1_unit_afe9fd89621459933c0e6563f8aace30e}{}\label{class_s_c2_a_p_i_1_1_unit_afe9fd89621459933c0e6563f8aace30e}
+
+
+Gets current shield of unit. 
+
+\begin{DoxyReturn}{Returns}
+The shield point if the unit has shield and is accessible. 0 if the unit can not have shield. Empty value if the unit is inaccessible. 
+\end{DoxyReturn}
+\index{S\+C2\+A\+P\+I\+::\+Unit@{S\+C2\+A\+P\+I\+::\+Unit}!Is\+Accessible@{Is\+Accessible}}
+\index{Is\+Accessible@{Is\+Accessible}!S\+C2\+A\+P\+I\+::\+Unit@{S\+C2\+A\+P\+I\+::\+Unit}}
+\subsubsection[{\texorpdfstring{Is\+Accessible() const }{IsAccessible() const }}]{\setlength{\rightskip}{0pt plus 5cm}bool S\+C2\+A\+P\+I\+::\+Unit\+::\+Is\+Accessible (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\hypertarget{class_s_c2_a_p_i_1_1_unit_ab1bca6383cac10ca0502097828ba3004}{}\label{class_s_c2_a_p_i_1_1_unit_ab1bca6383cac10ca0502097828ba3004}
+
+
+Determines whether the unit can be observed by local player. An unit is accessible when it\textquotesingle{}s alive and is not in fog of war or hidden. 
+
+\index{S\+C2\+A\+P\+I\+::\+Unit@{S\+C2\+A\+P\+I\+::\+Unit}!Is\+Owned\+By\+Enemy\+Player@{Is\+Owned\+By\+Enemy\+Player}}
+\index{Is\+Owned\+By\+Enemy\+Player@{Is\+Owned\+By\+Enemy\+Player}!S\+C2\+A\+P\+I\+::\+Unit@{S\+C2\+A\+P\+I\+::\+Unit}}
+\subsubsection[{\texorpdfstring{Is\+Owned\+By\+Enemy\+Player() const }{IsOwnedByEnemyPlayer() const }}]{\setlength{\rightskip}{0pt plus 5cm}bool S\+C2\+A\+P\+I\+::\+Unit\+::\+Is\+Owned\+By\+Enemy\+Player (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\hypertarget{class_s_c2_a_p_i_1_1_unit_a961023ad26d43f55beb70bada87e3c5e}{}\label{class_s_c2_a_p_i_1_1_unit_a961023ad26d43f55beb70bada87e3c5e}
+
+
+Determines whether unit is owned by an enemy of local player. Note it would return true for an enemy unit in fog of war, despite not knowing its existence. 
+
+\begin{DoxyReturn}{Returns}
+True when the unit is known to not owned by any friendly or neutral player. False when the unit is owned by friendly or neutral player, or was confirmed dead. 
+\end{DoxyReturn}
+\index{S\+C2\+A\+P\+I\+::\+Unit@{S\+C2\+A\+P\+I\+::\+Unit}!Is\+Owned\+By\+Local\+Player@{Is\+Owned\+By\+Local\+Player}}
+\index{Is\+Owned\+By\+Local\+Player@{Is\+Owned\+By\+Local\+Player}!S\+C2\+A\+P\+I\+::\+Unit@{S\+C2\+A\+P\+I\+::\+Unit}}
+\subsubsection[{\texorpdfstring{Is\+Owned\+By\+Local\+Player() const }{IsOwnedByLocalPlayer() const }}]{\setlength{\rightskip}{0pt plus 5cm}bool S\+C2\+A\+P\+I\+::\+Unit\+::\+Is\+Owned\+By\+Local\+Player (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\hypertarget{class_s_c2_a_p_i_1_1_unit_a1386e50bfc8169799b4c0a5218921f3c}{}\label{class_s_c2_a_p_i_1_1_unit_a1386e50bfc8169799b4c0a5218921f3c}
+
+
+Determines whether unit is owned by the local player. 
+
+\begin{DoxyReturn}{Returns}
+Returns true when the unit is accessible and belongs to local player. Returns false otherwise. 
+\end{DoxyReturn}
+\index{S\+C2\+A\+P\+I\+::\+Unit@{S\+C2\+A\+P\+I\+::\+Unit}!Signal\+Unit\+Created@{Signal\+Unit\+Created}}
+\index{Signal\+Unit\+Created@{Signal\+Unit\+Created}!S\+C2\+A\+P\+I\+::\+Unit@{S\+C2\+A\+P\+I\+::\+Unit}}
+\subsubsection[{\texorpdfstring{Signal\+Unit\+Created()}{SignalUnitCreated()}}]{\setlength{\rightskip}{0pt plus 5cm}static Signal$<${\bf Unit}, int$>$\& S\+C2\+A\+P\+I\+::\+Unit\+::\+Signal\+Unit\+Created (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{class_s_c2_a_p_i_1_1_unit_ac7be2fb4fba92ea3bad9c08dc5691baa}{}\label{class_s_c2_a_p_i_1_1_unit_ac7be2fb4fba92ea3bad9c08dc5691baa}
+
+
+Fires when seeing any unit being created. Does not fire if the unit is inaccessible. Connect\+: void On\+Unit\+Created(\+Unit event\+Unit, int event\+Player\+Id); 
+
+\begin{DoxyReturn}{Returns}
+Signal for binding
+\end{DoxyReturn}
+\index{S\+C2\+A\+P\+I\+::\+Unit@{S\+C2\+A\+P\+I\+::\+Unit}!Signal\+Unit\+Destroyed@{Signal\+Unit\+Destroyed}}
+\index{Signal\+Unit\+Destroyed@{Signal\+Unit\+Destroyed}!S\+C2\+A\+P\+I\+::\+Unit@{S\+C2\+A\+P\+I\+::\+Unit}}
+\subsubsection[{\texorpdfstring{Signal\+Unit\+Destroyed()}{SignalUnitDestroyed()}}]{\setlength{\rightskip}{0pt plus 5cm}static Signal$<${\bf Unit}, Optional$<${\bf Unit}$>$ $>$\& S\+C2\+A\+P\+I\+::\+Unit\+::\+Signal\+Unit\+Destroyed (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{class_s_c2_a_p_i_1_1_unit_af46f80064fb5835c6c71156cfea3a1d0}{}\label{class_s_c2_a_p_i_1_1_unit_af46f80064fb5835c6c71156cfea3a1d0}
+
+
+Fires when seeing any unit being killed / destroyed. Does not fire if the unit is inaccessible. killer\+Unit is the unit who killed this unit, or empty value if doesn\textquotesingle{}t exist or when it is inaccessible. Connect\+: void On\+Unit\+Destroyed(\+Unit event\+Unit, Optional$<$\+Unit$>$ killer\+Unit); 
+
+\begin{DoxyReturn}{Returns}
+Signal for binding
+\end{DoxyReturn}
+\index{S\+C2\+A\+P\+I\+::\+Unit@{S\+C2\+A\+P\+I\+::\+Unit}!Signal\+Unit\+Enter\+Vision@{Signal\+Unit\+Enter\+Vision}}
+\index{Signal\+Unit\+Enter\+Vision@{Signal\+Unit\+Enter\+Vision}!S\+C2\+A\+P\+I\+::\+Unit@{S\+C2\+A\+P\+I\+::\+Unit}}
+\subsubsection[{\texorpdfstring{Signal\+Unit\+Enter\+Vision()}{SignalUnitEnterVision()}}]{\setlength{\rightskip}{0pt plus 5cm}static Signal$<${\bf Unit}$>$\& S\+C2\+A\+P\+I\+::\+Unit\+::\+Signal\+Unit\+Enter\+Vision (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{class_s_c2_a_p_i_1_1_unit_a1f959d229372b216839c019dc406c4d5}{}\label{class_s_c2_a_p_i_1_1_unit_a1f959d229372b216839c019dc406c4d5}
+
+
+Fires when any unit becomes visible to local player. Also fires when a visible unit is created. Connect\+: void On\+Unit\+Enter\+Vision(\+Unit event\+Unit); 
+
+\begin{DoxyReturn}{Returns}
+Signal for binding
+\end{DoxyReturn}
+\index{S\+C2\+A\+P\+I\+::\+Unit@{S\+C2\+A\+P\+I\+::\+Unit}!Signal\+Unit\+Leave\+Vision@{Signal\+Unit\+Leave\+Vision}}
+\index{Signal\+Unit\+Leave\+Vision@{Signal\+Unit\+Leave\+Vision}!S\+C2\+A\+P\+I\+::\+Unit@{S\+C2\+A\+P\+I\+::\+Unit}}
+\subsubsection[{\texorpdfstring{Signal\+Unit\+Leave\+Vision()}{SignalUnitLeaveVision()}}]{\setlength{\rightskip}{0pt plus 5cm}static Signal$<${\bf Unit}$>$\& S\+C2\+A\+P\+I\+::\+Unit\+::\+Signal\+Unit\+Leave\+Vision (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{class_s_c2_a_p_i_1_1_unit_aaf7c098eff8a4ac7a8b8e02f13f4048e}{}\label{class_s_c2_a_p_i_1_1_unit_aaf7c098eff8a4ac7a8b8e02f13f4048e}
+
+
+Fires when any unit becomes not visible to local player. Connect\+: void On\+Unit\+Enter\+Vision(\+Unit event\+Unit); 
+
+\begin{DoxyReturn}{Returns}
+Signal for binding
+\end{DoxyReturn}
+\index{S\+C2\+A\+P\+I\+::\+Unit@{S\+C2\+A\+P\+I\+::\+Unit}!To\+String@{To\+String}}
+\index{To\+String@{To\+String}!S\+C2\+A\+P\+I\+::\+Unit@{S\+C2\+A\+P\+I\+::\+Unit}}
+\subsubsection[{\texorpdfstring{To\+String() const }{ToString() const }}]{\setlength{\rightskip}{0pt plus 5cm}std\+::string S\+C2\+A\+P\+I\+::\+Unit\+::\+To\+String (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\hypertarget{class_s_c2_a_p_i_1_1_unit_a6428d9cfc5d7bc7a7260c468d296adc4}{}\label{class_s_c2_a_p_i_1_1_unit_a6428d9cfc5d7bc7a7260c468d296adc4}
+
+
+Gets string representation of unit for debugging purpose. 
+
+\begin{DoxyReturn}{Returns}
+String representation of unit
+\end{DoxyReturn}
+
+
+\subsection{Member Data Documentation}
+\index{S\+C2\+A\+P\+I\+::\+Unit@{S\+C2\+A\+P\+I\+::\+Unit}!id@{id}}
+\index{id@{id}!S\+C2\+A\+P\+I\+::\+Unit@{S\+C2\+A\+P\+I\+::\+Unit}}
+\subsubsection[{\texorpdfstring{id}{id}}]{\setlength{\rightskip}{0pt plus 5cm}Handle\+Id S\+C2\+A\+P\+I\+::\+Unit\+::id}\hypertarget{class_s_c2_a_p_i_1_1_unit_a6b1854d0aed11be19a7a8c9849a78e79}{}\label{class_s_c2_a_p_i_1_1_unit_a6b1854d0aed11be19a7a8c9849a78e79}
+
+
+Unique integer associated with this unit. 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+S\+C2\+A\+P\+I/include/S\+C2\+A\+P\+I\+Unit.\+h\end{DoxyCompactItemize}

@@ -1,39 +1,24 @@
 var indexSectionsWithContent =
 {
-  0: "ghiopsuxy",
+  0: "giopstu",
   1: "gpu",
-  2: "s",
-  3: "hs",
-  4: "giosu",
-  5: "ixy",
-  6: "hos",
-  7: "o",
-  8: "s"
+  2: "giostu",
+  3: "i"
 };
 
 var indexSectionNames =
 {
   0: "all",
   1: "classes",
-  2: "namespaces",
-  3: "files",
-  4: "functions",
-  5: "variables",
-  6: "typedefs",
-  7: "related",
-  8: "defines"
+  2: "functions",
+  3: "variables"
 };
 
 var indexSectionLabels =
 {
   0: "All",
   1: "Classes",
-  2: "Namespaces",
-  3: "Files",
-  4: "Functions",
-  5: "Variables",
-  6: "Typedefs",
-  7: "Friends",
-  8: "Macros"
+  2: "Functions",
+  3: "Variables"
 };
 
