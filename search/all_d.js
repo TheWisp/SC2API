@@ -1,4 +1,29 @@
 var searchData=
 [
-  ['x',['X',['../struct_s_c2_a_p_i_1_1_point.html#a6ecb902f5c54b208fa138293ba690ef8',1,'SC2API::Point']]]
+  ['observer',['Observer',['../namespace_s_c2_a_p_i_1_1_units.html#a42918eb21e34692df2256391a0b1cbd5',1,'SC2API::Units']]],
+  ['observeracgluescreendummy',['ObserverACGluescreenDummy',['../namespace_s_c2_a_p_i_1_1_units.html#abe6693039876a955cd2722d52ec52328',1,'SC2API::Units']]],
+  ['omeganetworkacgluescreendummy',['OmegaNetworkACGluescreenDummy',['../namespace_s_c2_a_p_i_1_1_units.html#a40f68cf6e5e8384bc92934152880a473',1,'SC2API::Units']]],
+  ['operator_21_3d',['operator!=',['../class_s_c2_a_p_i_1_1_unit.html#a323985cd3de1b601637bbb073401c3c2',1,'SC2API::Unit']]],
+  ['operator_3c',['operator&lt;',['../class_s_c2_a_p_i_1_1_unit.html#a5313b8c40ac4198d2fc60bfbbb9b2f8a',1,'SC2API::Unit']]],
+  ['operator_3d',['operator=',['../class_s_c2_a_p_i_1_1_order.html#ad0ff46f46a6add124660d25b24d9153c',1,'SC2API::Order::operator=(const Order &amp;other)'],['../class_s_c2_a_p_i_1_1_order.html#aa8f923f34e3bb02d6a5869c1770ba8c9',1,'SC2API::Order::operator=(Order &amp;&amp;src)']]],
+  ['operator_3d_3d',['operator==',['../class_s_c2_a_p_i_1_1_order.html#a7df92fb0b6487d3bb669c06ed587696a',1,'SC2API::Order::operator==()'],['../class_s_c2_a_p_i_1_1_unit.html#a5c883a9fd3045c60b70ceff382dfd52e',1,'SC2API::Unit::operator==()']]],
+  ['operator_3e',['operator&gt;',['../class_s_c2_a_p_i_1_1_unit.html#a2b4fe1986f9ca1481f5eb151c2031fd0',1,'SC2API::Unit']]],
+  ['optional',['Optional',['../_s_c2_a_p_i_8h.html#a1b73f39dff38c715d19223973a9dacfa',1,'SC2API.h']]],
+  ['oracle',['Oracle',['../namespace_s_c2_a_p_i_1_1_units.html#a9dd2e1ade7dfb908a3de6e402f19f87b',1,'SC2API::Units']]],
+  ['oracleacgluescreendummy',['OracleACGluescreenDummy',['../namespace_s_c2_a_p_i_1_1_units.html#a76226b0d0fb3e6996250a98a40ee4850',1,'SC2API::Units']]],
+  ['oraclestasistrap',['OracleStasisTrap',['../namespace_s_c2_a_p_i_1_1_units.html#a390d5c1da796538030cfb8b6f6dfaa11',1,'SC2API::Units']]],
+  ['oracleweapon',['OracleWeapon',['../namespace_s_c2_a_p_i_1_1_units.html#a98e67d9b8a567aa9f7cf6ef50b8d95ab',1,'SC2API::Units']]],
+  ['orbitalcommand',['OrbitalCommand',['../namespace_s_c2_a_p_i_1_1_units.html#a39e582a62785b3d20dba96e7b97b90fd',1,'SC2API::Units']]],
+  ['orbitalcommandacgluescreendummy',['OrbitalCommandACGluescreenDummy',['../namespace_s_c2_a_p_i_1_1_units.html#a847cf0b2b7c150da65052cb7e53781fe',1,'SC2API::Units']]],
+  ['orbitalcommandflying',['OrbitalCommandFlying',['../namespace_s_c2_a_p_i_1_1_units.html#a5b8f8b7b47d5c18b6a325e9469da54d3',1,'SC2API::Units']]],
+  ['order',['Order',['../class_s_c2_a_p_i_1_1_order.html',1,'SC2API']]],
+  ['order',['Order',['../class_s_c2_a_p_i_1_1_order.html#a24774e3525fec9902124b1c3cfbbc9a4',1,'SC2API::Order::Order()'],['../class_s_c2_a_p_i_1_1_order.html#a6d504325653462486fb13deafc4c429c',1,'SC2API::Order::Order(const Order &amp;other)'],['../class_s_c2_a_p_i_1_1_order.html#a49177d7228ffcdcd8954e7bbc00fb416',1,'SC2API::Order::Order(Order &amp;&amp;src)']]],
+  ['order_5fimpl',['Order_Impl',['../class_s_c2_a_p_i_1_1_order.html#aea67a8b2c8cf1a6ef2aa3e258e302db1',1,'SC2API::Order']]],
+  ['outputscreen',['OutputScreen',['../namespace_s_c2_a_p_i.html#af88c19d96a8535321da3646c9d06f140',1,'SC2API']]],
+  ['overlord',['Overlord',['../namespace_s_c2_a_p_i_1_1_units.html#aca7e7fe87bbeba23c515b8421d89442f',1,'SC2API::Units']]],
+  ['overlordcocoon',['OverlordCocoon',['../namespace_s_c2_a_p_i_1_1_units.html#a1842fbbfd33dc8853f7a8040c327a068',1,'SC2API::Units']]],
+  ['overlordgeneratecreepkeybind',['OverlordGenerateCreepKeybind',['../namespace_s_c2_a_p_i_1_1_units.html#a4c8906b001b3031c06690a2f42230b8b',1,'SC2API::Units']]],
+  ['overlordtransport',['OverlordTransport',['../namespace_s_c2_a_p_i_1_1_units.html#a36328b11d11a6cf0133086743ecc27d2',1,'SC2API::Units']]],
+  ['overseer',['Overseer',['../namespace_s_c2_a_p_i_1_1_units.html#a846d54d32ae56d5b4a1f675681c4f9c4',1,'SC2API::Units']]],
+  ['overseeracgluescreendummy',['OverseerACGluescreenDummy',['../namespace_s_c2_a_p_i_1_1_units.html#a3a12babe6a9a065cd39ff638d1ece790',1,'SC2API::Units']]]
 ];
