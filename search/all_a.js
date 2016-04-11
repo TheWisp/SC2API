@@ -1,0 +1,24 @@
+var searchData=
+[
+  ['races',['Races',['../namespace_s_c2_a_p_i_1_1_races.html',1,'SC2API']]],
+  ['sc2api',['SC2API',['../namespace_s_c2_a_p_i.html',1,'']]],
+  ['sc2api_2eh',['SC2API.h',['../_s_c2_a_p_i_8h.html',1,'']]],
+  ['sc2api_5fapi',['SC2API_API',['../_s_c2_a_p_i_8h.html#a15e3faecd910db7a12fe2990b4a6679e',1,'SC2API.h']]],
+  ['sc2apicommand_2eh',['SC2APICommand.h',['../_s_c2_a_p_i_command_8h.html',1,'']]],
+  ['sc2apigame_2eh',['SC2APIGame.h',['../_s_c2_a_p_i_game_8h.html',1,'']]],
+  ['sc2apigamedata_2eh',['SC2APIGameData.h',['../_s_c2_a_p_i_game_data_8h.html',1,'']]],
+  ['sc2apiorder_2eh',['SC2APIOrder.h',['../_s_c2_a_p_i_order_8h.html',1,'']]],
+  ['sc2apiplayer_2eh',['SC2APIPlayer.h',['../_s_c2_a_p_i_player_8h.html',1,'']]],
+  ['sc2apipoint_2eh',['SC2APIPoint.h',['../_s_c2_a_p_i_point_8h.html',1,'']]],
+  ['sc2apiunit_2eh',['SC2APIUnit.h',['../_s_c2_a_p_i_unit_8h.html',1,'']]],
+  ['sendorder',['SendOrder',['../class_s_c2_a_p_i_1_1_unit.html#a0c1924b01043dc924a4b3fe15a83e793',1,'SC2API::Unit']]],
+  ['signal',['Signal',['../_s_c2_a_p_i_8h.html#a10415b8f71514688dd21d9bc956cba1b',1,'SC2API.h']]],
+  ['signalmatchended',['SignalMatchEnded',['../namespace_s_c2_a_p_i.html#a7d6d77b58fd856931f93fe16da9ee311',1,'SC2API']]],
+  ['signalmatchstarted',['SignalMatchStarted',['../namespace_s_c2_a_p_i.html#abc4e0a45b8fb658abe40d445838eb2d0',1,'SC2API']]],
+  ['signalobject',['SignalObject',['../_s_c2_a_p_i_8h.html#a91daa188682193282631d614970e4385',1,'SC2API.h']]],
+  ['signalunitcreated',['SignalUnitCreated',['../class_s_c2_a_p_i_1_1_unit.html#ac7be2fb4fba92ea3bad9c08dc5691baa',1,'SC2API::Unit']]],
+  ['signalunitdestroyed',['SignalUnitDestroyed',['../class_s_c2_a_p_i_1_1_unit.html#af46f80064fb5835c6c71156cfea3a1d0',1,'SC2API::Unit']]],
+  ['signalunitentervision',['SignalUnitEnterVision',['../class_s_c2_a_p_i_1_1_unit.html#a1f959d229372b216839c019dc406c4d5',1,'SC2API::Unit']]],
+  ['signalunitleavevision',['SignalUnitLeaveVision',['../class_s_c2_a_p_i_1_1_unit.html#aaf7c098eff8a4ac7a8b8e02f13f4048e',1,'SC2API::Unit']]],
+  ['singleton',['Singleton',['../_s_c2_a_p_i_8h.html#ad2b45ba148c63a7be033b635028d78d9',1,'SC2API.h']]]
+];

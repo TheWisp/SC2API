@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['outputscreen',['OutputScreen',['../class_s_c2_a_p_i_1_1_game.html#a77232f4869bbbe02e8e121c478192f74',1,'SC2API::Game']]]
+  ['logloader',['LogLoader',['../namespace_s_c2_a_p_i.html#ad0b10d1191e0747f6ef42c3335353259',1,'SC2API']]]
 ];

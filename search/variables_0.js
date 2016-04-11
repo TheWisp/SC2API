@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['id',['id',['../class_s_c2_a_p_i_1_1_unit.html#a6b1854d0aed11be19a7a8c9849a78e79',1,'SC2API::Unit']]]
+  ['ability',['Ability',['../struct_s_c2_a_p_i_1_1_command.html#aec493407c22e6bbf1fb32a31eb36e8e2',1,'SC2API::Command']]]
 ];

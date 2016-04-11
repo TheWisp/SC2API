@@ -1,5 +1,6 @@
 var searchData=
 [
+  ['getcurrentorder',['GetCurrentOrder',['../class_s_c2_a_p_i_1_1_unit.html#a2fde2c16f91545859b9b44cc1aefae2f',1,'SC2API::Unit']]],
   ['getenergy',['GetEnergy',['../class_s_c2_a_p_i_1_1_unit.html#a5cd554713dca1acf5ddf3b178f6d62a0',1,'SC2API::Unit']]],
   ['getlife',['GetLife',['../class_s_c2_a_p_i_1_1_unit.html#a10e23bed2cb5ce11257d21fbb3f31a9d',1,'SC2API::Unit']]],
   ['getowner',['GetOwner',['../class_s_c2_a_p_i_1_1_unit.html#ac99df1c5d2b459590453bae3831824af',1,'SC2API::Unit']]],

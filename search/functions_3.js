@@ -1,9 +1,6 @@
 var searchData=
 [
-  ['signalmatchended',['SignalMatchEnded',['../class_s_c2_a_p_i_1_1_game.html#ac4649e64cde9a5b6cab9522c6e3f932e',1,'SC2API::Game']]],
-  ['signalmatchstarted',['SignalMatchStarted',['../class_s_c2_a_p_i_1_1_game.html#a2886280f5f83ec023308bf0590ff142b',1,'SC2API::Game']]],
-  ['signalunitcreated',['SignalUnitCreated',['../class_s_c2_a_p_i_1_1_unit.html#ac7be2fb4fba92ea3bad9c08dc5691baa',1,'SC2API::Unit']]],
-  ['signalunitdestroyed',['SignalUnitDestroyed',['../class_s_c2_a_p_i_1_1_unit.html#af46f80064fb5835c6c71156cfea3a1d0',1,'SC2API::Unit']]],
-  ['signalunitentervision',['SignalUnitEnterVision',['../class_s_c2_a_p_i_1_1_unit.html#a1f959d229372b216839c019dc406c4d5',1,'SC2API::Unit']]],
-  ['signalunitleavevision',['SignalUnitLeaveVision',['../class_s_c2_a_p_i_1_1_unit.html#aaf7c098eff8a4ac7a8b8e02f13f4048e',1,'SC2API::Unit']]]
+  ['operator_3d',['operator=',['../class_s_c2_a_p_i_1_1_order.html#ad0ff46f46a6add124660d25b24d9153c',1,'SC2API::Order::operator=(const Order &amp;other)'],['../class_s_c2_a_p_i_1_1_order.html#aa8f923f34e3bb02d6a5869c1770ba8c9',1,'SC2API::Order::operator=(Order &amp;&amp;src)']]],
+  ['order',['Order',['../class_s_c2_a_p_i_1_1_order.html#a24774e3525fec9902124b1c3cfbbc9a4',1,'SC2API::Order::Order()'],['../class_s_c2_a_p_i_1_1_order.html#a6d504325653462486fb13deafc4c429c',1,'SC2API::Order::Order(const Order &amp;other)'],['../class_s_c2_a_p_i_1_1_order.html#a49177d7228ffcdcd8954e7bbc00fb416',1,'SC2API::Order::Order(Order &amp;&amp;src)']]],
+  ['outputscreen',['OutputScreen',['../namespace_s_c2_a_p_i.html#af88c19d96a8535321da3646c9d06f140',1,'SC2API']]]
 ];

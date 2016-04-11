@@ -1,9 +1,7 @@
 var searchData=
 [
-  ['signalmatchended',['SignalMatchEnded',['../class_s_c2_a_p_i_1_1_game.html#ac4649e64cde9a5b6cab9522c6e3f932e',1,'SC2API::Game']]],
-  ['signalmatchstarted',['SignalMatchStarted',['../class_s_c2_a_p_i_1_1_game.html#a2886280f5f83ec023308bf0590ff142b',1,'SC2API::Game']]],
-  ['signalunitcreated',['SignalUnitCreated',['../class_s_c2_a_p_i_1_1_unit.html#ac7be2fb4fba92ea3bad9c08dc5691baa',1,'SC2API::Unit']]],
-  ['signalunitdestroyed',['SignalUnitDestroyed',['../class_s_c2_a_p_i_1_1_unit.html#af46f80064fb5835c6c71156cfea3a1d0',1,'SC2API::Unit']]],
-  ['signalunitentervision',['SignalUnitEnterVision',['../class_s_c2_a_p_i_1_1_unit.html#a1f959d229372b216839c019dc406c4d5',1,'SC2API::Unit']]],
-  ['signalunitleavevision',['SignalUnitLeaveVision',['../class_s_c2_a_p_i_1_1_unit.html#aaf7c098eff8a4ac7a8b8e02f13f4048e',1,'SC2API::Unit']]]
+  ['id',['id',['../class_s_c2_a_p_i_1_1_unit.html#a6b1854d0aed11be19a7a8c9849a78e79',1,'SC2API::Unit']]],
+  ['isaccessible',['IsAccessible',['../class_s_c2_a_p_i_1_1_unit.html#ab1bca6383cac10ca0502097828ba3004',1,'SC2API::Unit']]],
+  ['isownedbyenemyplayer',['IsOwnedByEnemyPlayer',['../class_s_c2_a_p_i_1_1_unit.html#a961023ad26d43f55beb70bada87e3c5e',1,'SC2API::Unit']]],
+  ['isownedbylocalplayer',['IsOwnedByLocalPlayer',['../class_s_c2_a_p_i_1_1_unit.html#a1386e50bfc8169799b4c0a5218921f3c',1,'SC2API::Unit']]]
 ];
