@@ -9,7 +9,7 @@ namespace SC2API
     /// <summary>
     /// SC2API Unit is an unreliable shell of the actual unit, representing the observable aspect of unit.
     /// </summary>
-    class SC2API_API Unit
+    class SC2API_API Unit final
     {
     public:
         #pragma region Basics
@@ -88,6 +88,28 @@ namespace SC2API
         Optional<double> GetEnergy() const;
         #pragma endregion
 
+        #pragma region Orders
+
+        /// <summary>
+        /// Sends an order to a unit.
+        /// </summary>
+        /// <param name="order">Order to send</param>
+        void SendOrder(class Order& order);
+
+        /// <summary>
+        /// Adds an order to end of order queue for a unit.
+        /// </summary>
+        /// <param name="order">Order to send</param>
+        void QueueOrder(class Order& order);
+
+        /// <summary>
+        /// Gets current order for a unit.
+        /// </summary>
+        /// <returns>Returns current order if exists, returns empty value otherwise.</returns>
+        Optional<Order> GetCurrentOrder() const;
+
+        #pragma endregion
+
         #pragma region Miscellaneous
         /// <summary>
         /// Gets string representation of unit for debugging purpose.
@@ -132,7 +154,7 @@ namespace SC2API
         /// <summary>
         /// Unique integer associated with this unit.
         /// </summary>
-        HandleId id;
+        HandleId id = 0;
 
         /// <summary>
         /// Constructor. Internal usage only.
@@ -140,6 +162,9 @@ namespace SC2API
         explicit Unit(HandleId inId) : id(inId) {}
 
         friend bool operator < (const Unit& lhs, const Unit& rhs);
+        friend bool operator > (const Unit& lhs, const Unit& rhs);
+        friend bool operator == (const Unit& lhs, const Unit& rhs);
+        friend bool operator != (const Unit& lhs, const Unit& rhs);
         #pragma endregion
     };
 }

@@ -9,9 +9,13 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SC2API", "SC2API", "{F14B58
 	ProjectSection(SolutionItems) = preProject
 		SC2API\include\HandleId.h = SC2API\include\HandleId.h
 		SC2API\include\SC2API.h = SC2API\include\SC2API.h
+		SC2API\include\SC2APICommand.h = SC2API\include\SC2APICommand.h
 		SC2API\include\SC2APIGame.h = SC2API\include\SC2APIGame.h
+		SC2API\include\SC2APIGameData.h = SC2API\include\SC2APIGameData.h
+		SC2API\include\SC2APIOrder.h = SC2API\include\SC2APIOrder.h
 		SC2API\include\SC2APIPoint.h = SC2API\include\SC2APIPoint.h
 		SC2API\include\SC2APIUnit.h = SC2API\include\SC2APIUnit.h
+		SC2API\include\Utils.h = SC2API\include\Utils.h
 	EndProjectSection
 EndProject
 Global

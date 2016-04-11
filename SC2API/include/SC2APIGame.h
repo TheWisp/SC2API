@@ -4,34 +4,29 @@
 
 namespace SC2API
 {
-    class SC2API_API Game
-    {
-    public:
+    #pragma region Utils
 
-		#pragma region Utils
+    /// <summary>
+    /// Displays message in chat area of the screen.
+    /// Only the local player can see displayed message.
+    /// </summary>
+    /// <param name="Message">String message to display</param>
+    SC2API_API void OutputScreen(std::string Message);
+    #pragma endregion
 
-		/// <summary>
-		/// Displays message in chat area of the screen.
-		/// Only the local player can see displayed message.
-		/// </summary>
-		/// <param name="Message">String message to display</param>
-		static void OutputScreen(std::string Message);
-		#pragma endregion
+    #pragma region Events
+    /// <summary>
+    /// Fires when a match or replay has started.
+    /// Connect: void OnMatchStart();
+    /// </summary>
+    /// <returns>Signal for binding</returns>
+    SC2API_API Signal<>& SignalMatchStarted();
 
-		#pragma region Events
-		/// <summary>
-		/// Fires when a match or replay has started.
-		/// Connect: void OnMatchStart();
-		/// </summary>
-		/// <returns>Signal for binding</returns>
-        static Signal<>& SignalMatchStarted();
-        
-		/// <summary>
-		/// Fires when a match or replay has ended.
-		/// Connect: void OnMatchEnded();
-		/// </summary>
-		/// <returns>Signal for binding</returns>
-        static Signal<>& SignalMatchEnded();
-		#pragma endregion
-    };
+    /// <summary>
+    /// Fires when a match or replay has ended.
+    /// Connect: void OnMatchEnded();
+    /// </summary>
+    /// <returns>Signal for binding</returns>
+    SC2API_API Signal<>& SignalMatchEnded();
+    #pragma endregion
 }

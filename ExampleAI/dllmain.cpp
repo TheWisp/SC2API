@@ -6,8 +6,8 @@ using namespace SC2API;
 
 static void Init()
 {
-    Game::SignalMatchStarted().connect(ExampleAI::GameInstance::instance);
-    Game::SignalMatchEnded().connect(ExampleAI::GameInstance::freeInstance);
+    SignalMatchStarted().connect(ExampleAI::GameInstance::instance);
+    SignalMatchEnded().connect(ExampleAI::GameInstance::freeInstance);
 }
 
 static void Cleanup()
