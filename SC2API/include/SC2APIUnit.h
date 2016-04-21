@@ -9,7 +9,7 @@ namespace SC2API
     /// <summary>
     /// SC2API Unit is an unreliable shell of the actual unit, representing the observable aspect of unit.
     /// </summary>
-    class SC2API_API Unit final
+    struct SC2API_API Unit final
     {
     public:
         #pragma region Basics
@@ -18,6 +18,12 @@ namespace SC2API
         /// An unit is accessible when it's alive and is not in fog of war or hidden.
         /// </summary>
         bool IsAccessible() const;
+
+        /// <summary>
+        /// Gets the unit type for the specified unit.
+        /// </summary>
+        /// <returns>If the unit is currently accessible, returns unit type, otherwise returns empty value.</returns>
+        Optional<std::string> GetType() const;
 
         /// <summary>
         /// Gets unit's current position on the map.
@@ -155,12 +161,6 @@ namespace SC2API
         /// Unique integer associated with this unit.
         /// </summary>
         HandleId id = 0;
-
-        /// <summary>
-        /// Constructor. Internal usage only.
-        /// </summary>
-        explicit Unit(HandleId inId) : id(inId) {}
-
         friend bool operator < (const Unit& lhs, const Unit& rhs);
         friend bool operator > (const Unit& lhs, const Unit& rhs);
         friend bool operator == (const Unit& lhs, const Unit& rhs);

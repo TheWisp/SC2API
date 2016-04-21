@@ -1,8 +1,12 @@
 #pragma once
 #include <SC2API/include/SC2API.h>
 #include <SC2API/include/SC2APIGame.h>
+#include <SC2API/include/SC2APIGameData.h>
 #include <SC2API/include/SC2APIUnit.h>
+#include <SC2API/include/SC2APIOrder.h>
 #include <SC2API/include/SC2APIPlayer.h>
+#include <SC2API/include/SC2APIUnitGroup.h>
+#include <SC2API/include/SC2APICommand.h>
 #include <SC2API/include/Utils.h>
 using namespace SC2API;
 
@@ -13,6 +17,32 @@ namespace ExampleAI
         , public SignalObject
     {
     public:
+
+        Command TrainWorkerCommand(std::string race)
+        {
+            if (race == Races::Terran)
+            {
+                return{ Abils::CommandCenterTrain, 0 };
+            }
+            else if (race == Races::Zerg)
+            {
+                return{ Abils::LarvaTrain, 0 };
+            }
+            else if (race == Races::Protoss)
+            {
+                return{ Abils::NexusTrain, 0 };
+            }
+            return Command();   //TODO: how to express "invalid"
+        }
+
+		void StartTrainWorkers()
+		{
+            UnitGroup workerTrainingUnits = UnitGroup::GetUnitsOfType({ Units::CommandCenter, Units::Larva, Units::Nexus }, UnitFilterFlag::Ally);
+            Unit workerTrainer = workerTrainingUnits.First().value();
+            
+            Command cmd = TrainWorkerCommand(PlayerLocalRace());
+            workerTrainer.SendOrder(Order::OrderWithNoTarget(cmd));
+		}
 
         void OnUnitCreated(Unit eventUnit, int eventPlayerId)
         {
@@ -53,6 +83,7 @@ namespace ExampleAI
             LogLoader("Player 1 race: " + PlayerLobbyRace(1));
             LogLoader("Player 2 race: " + PlayerLobbyRace(2));
             
+            SignalTimer(0, false).connect(this, &GameInstance::StartTrainWorkers);
         }
 
         ~GameInstance()

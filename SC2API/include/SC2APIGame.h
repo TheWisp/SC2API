@@ -4,6 +4,11 @@
 
 namespace SC2API
 {
+	/// <summary>
+	/// Returns true when the game is in replay mode.
+	/// </summary>
+	bool GameIsReplay();
+
     #pragma region Utils
 
     /// <summary>
@@ -28,5 +33,7 @@ namespace SC2API
     /// </summary>
     /// <returns>Signal for binding</returns>
     SC2API_API Signal<>& SignalMatchEnded();
+
+    SC2API_API Signal<>& SignalTimer(double timeOut, bool loop);
     #pragma endregion
 }

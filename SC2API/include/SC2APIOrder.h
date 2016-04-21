@@ -5,6 +5,8 @@ namespace SC2API
 {
     class SC2API_API Order final
     {
+    public:
+
         /// <summary>
         /// Returns an order with no target.
         /// </summary>
@@ -26,7 +28,7 @@ namespace SC2API
         /// <param name="command">Command of the order</param>
         /// <param name="targetUnit">Order target unit</param>
         /// <returns>order</returns>
-        static Order OrderTargetingUnit(struct Command command, class Unit targetUnit);
+        static Order OrderTargetingUnit(struct Command command, struct Unit targetUnit);
 
         #pragma region Implementation
     private:

@@ -9,7 +9,7 @@ namespace SC2API
     /// </summary>
     struct SC2API_API Command final
     {
-        const char* Ability;
+        std::string Ability;	//see SC2API::Abils namespace
         int CommandIndex;
     };
 }

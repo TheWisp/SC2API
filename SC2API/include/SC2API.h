@@ -10,6 +10,8 @@
 #define SC2API_API __declspec (dllimport)
 #endif
 
+#pragma warning(disable: 4251)  //Currently, user DLL is expected to compile with same options as SC2API (/MD, /MDd)
+
 /// <summary>
 /// Type and thread safe signal implementation.
 /// For more information, see Signals & Slots at wikipedia:
