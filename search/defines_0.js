@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['sc2api_5fapi',['SC2API_API',['../_s_c2_a_p_i_8h.html#a15e3faecd910db7a12fe2990b4a6679e',1,'SC2API.h']]]
+  ['enum_5fclass_5fflags',['ENUM_CLASS_FLAGS',['../_s_c2_a_p_i_unit_filter_flag_8dependency_8h.html#a80975a5eda8bee64896556c6df5807d7',1,'SC2APIUnitFilterFlag.dependency.h']]]
 ];

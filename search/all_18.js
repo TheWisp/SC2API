@@ -1,14 +1,11 @@
 var searchData=
 [
-  ['zealot',['Zealot',['../namespace_s_c2_a_p_i_1_1_units.html#a03d78839c3c23fe7fcff9794fe853258',1,'SC2API::Units']]],
-  ['zealotacgluescreendummy',['ZealotACGluescreenDummy',['../namespace_s_c2_a_p_i_1_1_units.html#a1f71d4a66589bc59501dbf8afcf00c81',1,'SC2API::Units']]],
-  ['zealotaiuracgluescreendummy',['ZealotAiurACGluescreenDummy',['../namespace_s_c2_a_p_i_1_1_units.html#a602c3c762f57677d1da9cf16d264e5bb',1,'SC2API::Units']]],
-  ['zealotpurifieracgluescreendummy',['ZealotPurifierACGluescreenDummy',['../namespace_s_c2_a_p_i_1_1_units.html#a9e530fcb188497a09debac2c43bf1239',1,'SC2API::Units']]],
-  ['zealotshakurasacgluescreendummy',['ZealotShakurasACGluescreenDummy',['../namespace_s_c2_a_p_i_1_1_units.html#a127b30e455cb801331a8e38661df7883',1,'SC2API::Units']]],
-  ['zerg',['Zerg',['../namespace_s_c2_a_p_i_1_1_races.html#a72c651e2e888a1e3bcfe801983703102',1,'SC2API::Races']]],
-  ['zergling',['Zergling',['../namespace_s_c2_a_p_i_1_1_units.html#a76f4009c04f6e856ba663f8611d7acd0',1,'SC2API::Units']]],
-  ['zerglingburrowed',['ZerglingBurrowed',['../namespace_s_c2_a_p_i_1_1_units.html#afe43ca9845cdb03b8d51aae4ca419c04',1,'SC2API::Units']]],
-  ['zerglingkerriganacgluescreendummy',['ZerglingKerriganACGluescreenDummy',['../namespace_s_c2_a_p_i_1_1_units.html#a4d4df4221590c1859d071f4181e04454',1,'SC2API::Units']]],
-  ['zerglingzagaraacgluescreendummy',['ZerglingZagaraACGluescreenDummy',['../namespace_s_c2_a_p_i_1_1_units.html#ad0e67b461ab060fcd2e9dc295549019e',1,'SC2API::Units']]],
-  ['zerusdestructiblearch',['ZerusDestructibleArch',['../namespace_s_c2_a_p_i_1_1_units.html#a01a4c6ea3dfab4bc5765a58f0d4309f4',1,'SC2API::Units']]]
+  ['y',['Y',['../struct_s_c2_a_p_i_1_1_point.html#af100314668f1df205095c11708a1ac11',1,'SC2API::Point']]],
+  ['yamato',['Yamato',['../namespace_s_c2_a_p_i_1_1_abils.html#a5aaa9a43a72a11414f75558e2c65012d',1,'SC2API::Abils']]],
+  ['yamatoweapon',['YamatoWeapon',['../namespace_s_c2_a_p_i_1_1_units.html#af3ed75c3457ecb65e927b0fb40b7401b',1,'SC2API::Units']]],
+  ['yoink',['Yoink',['../namespace_s_c2_a_p_i_1_1_abils.html#a86cb2d33b1d1fc3274a6764fb6b0c653',1,'SC2API::Abils']]],
+  ['yoinkmissile',['YoinkMissile',['../namespace_s_c2_a_p_i_1_1_units.html#a11c254c1f7d90e2c519ba92941eaea26',1,'SC2API::Units']]],
+  ['yoinksiegetankmissile',['YoinkSiegeTankMissile',['../namespace_s_c2_a_p_i_1_1_units.html#a6d10e062512b72541dfa5c85690f4121',1,'SC2API::Units']]],
+  ['yoinkvikingairmissile',['YoinkVikingAirMissile',['../namespace_s_c2_a_p_i_1_1_units.html#aaf2634e8c91c3f9b782f94f28ae569f1',1,'SC2API::Units']]],
+  ['yoinkvikinggroundmissile',['YoinkVikingGroundMissile',['../namespace_s_c2_a_p_i_1_1_units.html#aade72028d50c24b6b9bb4c03d3924ba1',1,'SC2API::Units']]]
 ];
