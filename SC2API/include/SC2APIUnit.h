@@ -154,6 +154,41 @@ namespace SC2API
         /// <returns>Signal for binding</returns>
         static Signal<Unit>& SignalUnitLeaveVision();
 
+        /// <summary>
+        /// Fires when local player's unit started training a unit.
+        /// Connect: void OnUnitTrainingStarted(Unit trainerUnit, std::string trainedUnitType);
+        /// </summary>
+        /// <returns>Signal for binding</returns>
+        static Signal<Unit, std::string>& SignalUnitTrainingStarted();
+
+        /// <summary>
+        /// Fires when local player's unit training is paused.
+        /// Connect: void OnUnitTrainingPaused(Unit trainerUnit, std::string trainedUnitType);
+        /// </summary>
+        /// <returns>Signal for binding</returns>
+        static Signal<Unit, std::string>& SignalUnitTrainingPaused();
+
+        /// <summary>
+        /// Fires when local player's unit training is resumed.
+        /// Connect: void OnUnitTrainingResumed(Unit trainerUnit, std::string trainedUnitType);
+        /// </summary>
+        /// <returns>Signal for binding</returns>
+        static Signal<Unit, std::string>& SignalUnitTrainingResumed();
+
+        /// <summary>
+        /// Fires when local player's unit training is canceled.
+        /// Connect: void OnUnitTrainingCanceled(Unit trainerUnit, std::string trainedUnitType);
+        /// </summary>
+        /// <returns>Signal for binding</returns>
+        static Signal<Unit, std::string>& SignalUnitTrainingCanceled();
+
+        /// <summary>
+        /// Fires when local player's unit training is complete.
+        /// Connect: void OnUnitTrainingComplete(Unit trainerUnit, Unit completedUnit);
+        /// </summary>
+        /// <returns>Signal for binding</returns>
+        static Signal<Unit, Unit>& SignalUnitTrainingCompleted();
+
         #pragma endregion 
 
         #pragma region Implementations

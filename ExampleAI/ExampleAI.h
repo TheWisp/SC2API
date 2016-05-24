@@ -35,14 +35,31 @@ namespace ExampleAI
             return Command();   //TODO: how to express "invalid"
         }
 
-		void StartTrainWorkers()
-		{
-            UnitGroup workerTrainingUnits = UnitGroup::GetUnitsOfType({ Units::CommandCenter, Units::Larva, Units::Nexus }, UnitFilterFlag::Ally);
-            Unit workerTrainer = workerTrainingUnits.First().value();
-            
-            Command cmd = TrainWorkerCommand(PlayerLocalRace());
-            workerTrainer.SendOrder(Order::OrderWithNoTarget(cmd));
-		}
+        void StartTrainWorkers()
+        {
+            TrainWorker();
+        }
+
+        void TrainWorker()
+        {
+            UnitGroup workerTrainerUnits = UnitGroup::GetUnitsOfType({ Units::CommandCenter, Units::Larva, Units::Nexus }, UnitFilterFlag::Ally);
+            if (workerTrainerUnits.Count() > 0)
+            {
+                Unit workerTrainer = workerTrainerUnits.First().value();
+                Command cmd = TrainWorkerCommand(PlayerLocalRace());
+                workerTrainer.SendOrder(Order::OrderWithNoTarget(cmd));
+            }
+        }
+
+        void OnWorkerTrainingComplete(Unit trainerUnit, Unit completedUnit)
+        {
+            auto utype = completedUnit.GetType().value();
+            //this is wrong because we shouldn't wait for worker to finish. also drones are trained as soon as player has enough resource
+            if (utype == Units::SCV || utype == Units::Drone || utype == Units::Probe)  
+            {
+                TrainWorker();  //simple way
+            }
+        }
 
         void OnUnitCreated(Unit eventUnit, int eventPlayerId)
         {
@@ -65,7 +82,7 @@ namespace ExampleAI
         {
             LogLoader("Unit enters vision: " + eventUnit.ToString());
         }
-        
+
         void OnUnitLeaveVision(Unit eventUnit)
         {
             LogLoader("Unit leaves vision: " + eventUnit.ToString());
@@ -82,8 +99,9 @@ namespace ExampleAI
 
             LogLoader("Player 1 race: " + PlayerLobbyRace(1));
             LogLoader("Player 2 race: " + PlayerLobbyRace(2));
-            
+
             SignalTimer(0, false).connect(this, &GameInstance::StartTrainWorkers);
+            Unit::SignalUnitTrainingCompleted().connect(this, &GameInstance::OnWorkerTrainingComplete);
         }
 
         ~GameInstance()

@@ -34,6 +34,10 @@ namespace SC2API
     /// <returns>Signal for binding</returns>
     SC2API_API Signal<>& SignalMatchEnded();
 
+    /// <summary>
+    /// Sets a game timer to fire when time has passed.
+    /// Connect: void OnTimer();
+    /// </summary>
     SC2API_API Signal<>& SignalTimer(double timeOut, bool loop);
     #pragma endregion
 }
