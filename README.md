@@ -5,7 +5,7 @@ SC2API is a free C++ framework intended for AI projects to interact with Blizzar
 SC2API is a third party "hack" of the game based on reverse engineering, and thus violates the EULA of the game. In order to prevent SC2API being misused as a maphack, the internal code of the library is kept closed source. Instead, binary versions of the library (dll) are provided, and kept up to date with the game version.
 
 ## Supported game client
-StarCraft II 3.3.0 (42932), 32 bit Windows. 64 bit support is works in progress.
+StarCraft II 3.3.1 (43199), 32 bit Windows. 64 bit support is works in progress.
 
 ## How to use
 
