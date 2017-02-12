@@ -5,20 +5,19 @@
 namespace SC2API
 {
 	/// <summary>
-	/// Returns true when the game is in replay mode.
+	/// Determines whether the game is in replay mode.
 	/// </summary>
 	SC2API_API bool GameIsReplay();
 
 	/// <summary>
-	/// Returns true when the game is single player (Only one client is running the game, so cheats and debugging are possible)
+	/// Determines whether the game is single player (Only one client is running the game, so cheats and debugging are possible)
 	/// </summary>
 	SC2API_API bool GameIsSinglePlayer();
 
     #pragma region Utils
 
     /// <summary>
-    /// Displays message in chat area of the screen.
-    /// Only the local player can see displayed message.
+    /// Displays message only visible to local player in chat area of the screen.
     /// </summary>
     /// <param name="Message">String message to display</param>
     SC2API_API void OutputScreen(std::string Message);

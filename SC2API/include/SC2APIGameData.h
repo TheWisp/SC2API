@@ -6,7 +6,6 @@ namespace SC2API
 {
     namespace Races
     {
-        //TODO: neutral
         const std::string Random  = "RAND";
         const std::string Terran  = "Terr";
         const std::string Zerg    = "Zerg";

@@ -13,12 +13,12 @@ namespace SC2API
 	SC2API_API void CheatSetGameSpeed(float factor);
 
 	/// <summary>
-	/// Creates an unit at given point. Only valid when the game is single player.
+	/// Creates a unit at given point. Only valid when the game is single player.
 	/// </summary>
 	SC2API_API Unit CheatCreateUnit(const std::string& inUnitType, Point inLocation);
 
 	/// <summary>
-	/// Removes an unit. Only valid when the game is single player.
+	/// Removes a unit. Only valid when the game is single player.
 	/// </summary>
 	SC2API_API void CheatRemoveUnit(const Unit& inUnit);
 

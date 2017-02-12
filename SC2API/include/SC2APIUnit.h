@@ -15,7 +15,7 @@ namespace SC2API
         #pragma region Basics
         /// <summary>
         /// Determines whether the unit can be observed by local player.
-        /// An unit is accessible when it's alive and is not in fog of war or hidden.
+        /// A unit is accessible when it's alive and is not in fog of war or hidden.
         /// </summary>
         bool IsAccessible() const;
 

@@ -27,7 +27,7 @@ namespace SC2API
 		//move ctor
 		template<
 			class OtherT,
-			class = typename std::enable_if<std::is_base_of<T, OtherT>::value>::type>
+			typename std::enable_if<std::is_base_of<T, OtherT>::value, int>::type = 0>
 			Creator(Creator<OtherT>&& other)
 			: functor(std::move(other.functor))
 		{}
@@ -35,7 +35,7 @@ namespace SC2API
 		//copy ctor
 		template<
 			class OtherT,
-			class = typename std::enable_if<std::is_base_of<T, OtherT>::value>::type>
+			typename std::enable_if<std::is_base_of<T, OtherT>::value, int>::type = 0>
 			Creator(const Creator<OtherT>& other)
 			: functor(other.functor)
 		{}
@@ -43,7 +43,7 @@ namespace SC2API
 		//move assign
 		template<
 			class OtherT,
-			class = typename std::enable_if<std::is_base_of<T, OtherT>::value>::type>
+			typename std::enable_if<std::is_base_of<T, OtherT>::value, int>::type = 0>
 			Creator<T>& operator=(Creator<OtherT>&& other)
 		{
 			functor = std::move(other.functor);
@@ -53,7 +53,7 @@ namespace SC2API
 		//copy assign
 		template<
 			class OtherT,
-			class = typename std::enable_if<std::is_base_of<T, OtherT>::value>::type>
+			typename std::enable_if<std::is_base_of<T, OtherT>::value, int>::type = 0>
 			Creator<T>& operator=(const Creator<OtherT>& other)
 		{
 			functor = other.functor;
