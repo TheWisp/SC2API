@@ -11,8 +11,8 @@
 <polygon fill="white" stroke="none" points="-4,4 -4,-136 489,-136 489,4 -4,4"/>
 <!-- Node1 -->
 <g id="node1" class="node"><title>Node1</title>
-<polygon fill="#bfbfbf" stroke="black" points="151,-112.5 151,-131.5 304,-131.5 304,-112.5 151,-112.5"/>
-<text text-anchor="middle" x="227.5" y="-119.5" font-family="Helvetica,sans-Serif" font-size="10.00">SC2API/include/SC2APIPoint.h</text>
+<polygon fill="#bfbfbf" stroke="black" points="185,-112.5 185,-131.5 338,-131.5 338,-112.5 185,-112.5"/>
+<text text-anchor="middle" x="261.5" y="-119.5" font-family="Helvetica,sans-Serif" font-size="10.00">SC2API/include/SC2APIPoint.h</text>
 </g>
 <!-- Node2 -->
 <g id="node2" class="node"><title>Node2</title>
@@ -24,8 +24,18 @@
 </g>
 <!-- Node1&#45;&gt;Node2 -->
 <g id="edge1" class="edge"><title>Node1&#45;&gt;Node2</title>
-<path fill="none" stroke="midnightblue" d="M227.5,-112.083C227.5,-105.006 227.5,-94.8611 227.5,-85.9865"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="231,-85.751 227.5,-75.7511 224,-85.7511 231,-85.751"/>
+<path fill="none" stroke="midnightblue" d="M255.886,-112.083C251.133,-104.534 244.182,-93.4948 238.348,-84.2298"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="241.3,-82.3486 233.01,-75.7511 235.376,-86.0783 241.3,-82.3486"/>
+</g>
+<!-- Node7 -->
+<g id="node7" class="node"><title>Node7</title>
+<polygon fill="white" stroke="#bfbfbf" points="275,-56.5 275,-75.5 316,-75.5 316,-56.5 275,-56.5"/>
+<text text-anchor="middle" x="295.5" y="-63.5" font-family="Helvetica,sans-Serif" font-size="10.00">string</text>
+</g>
+<!-- Node1&#45;&gt;Node7 -->
+<g id="edge6" class="edge"><title>Node1&#45;&gt;Node7</title>
+<path fill="none" stroke="midnightblue" d="M267.114,-112.083C271.867,-104.534 278.818,-93.4948 284.652,-84.2298"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="287.624,-86.0783 289.99,-75.7511 281.7,-82.3486 287.624,-86.0783"/>
 </g>
 <!-- Node3 -->
 <g id="node3" class="node"><title>Node3</title>

@@ -14,6 +14,7 @@ var searchData=
   ['feedback',['Feedback',['../namespace_s_c2_a_p_i_1_1_abils.html#a1d625658b9419768b5e491302b821ac5',1,'SC2API::Abils']]],
   ['fightermode',['FighterMode',['../namespace_s_c2_a_p_i_1_1_abils.html#a1b0e6157ea17349360213394d827ddde',1,'SC2API::Abils']]],
   ['filter',['Filter',['../class_s_c2_a_p_i_1_1_unit_group.html#a78e66d8544655aaeb66966a14670c9c1',1,'SC2API::UnitGroup::Filter(UnitFilterFlag requiredFlags, UnitFilterFlag excludedFlags=UnitFilterFlag::Null)'],['../class_s_c2_a_p_i_1_1_unit_group.html#a78972d69735335929aacd6641595dbc6',1,'SC2API::UnitGroup::Filter(const std::set&lt; std::string &gt; &amp;possibleUnitTypes)']]],
+  ['finished',['Finished',['../class_s_c2_a_p_i_1_1_unit_test_base.html#a6737ecd12e8779b25ec34f1181f94c8a',1,'SC2API::UnitTestBase']]],
   ['firebatacgluescreendummy',['FirebatACGluescreenDummy',['../namespace_s_c2_a_p_i_1_1_units.html#a193e2aed53dc138bde75dabc317e8f8e',1,'SC2API::Units']]],
   ['first',['First',['../class_s_c2_a_p_i_1_1_unit_group.html#adffa60d5d27b753482f6a4e397a6bb02',1,'SC2API::UnitGroup']]],
   ['fleetbeacon',['FleetBeacon',['../namespace_s_c2_a_p_i_1_1_units.html#a392effd1d66ce5dc710107b30c14f772',1,'SC2API::Units']]],

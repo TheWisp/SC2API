@@ -1,4 +1,6 @@
 var searchData=
 [
-  ['queueorder',['QueueOrder',['../struct_s_c2_a_p_i_1_1_unit.html#a6b3f4ca7a1b459f87c4e03c48b90cdec',1,'SC2API::Unit::QueueOrder()'],['../class_s_c2_a_p_i_1_1_unit_group.html#aeabce7b0362fd360d66b7acc19b46f45',1,'SC2API::UnitGroup::QueueOrder()']]]
+  ['playerlobbyrace',['PlayerLobbyRace',['../namespace_s_c2_a_p_i.html#af8ef799270cef7fbef9f48220f7c2558',1,'SC2API']]],
+  ['playerlocal',['PlayerLocal',['../namespace_s_c2_a_p_i.html#ab20db1cc6177619338405005951a9850',1,'SC2API']]],
+  ['playerlocalrace',['PlayerLocalRace',['../namespace_s_c2_a_p_i.html#abafeef882dfdefaac2f35019f474d977',1,'SC2API']]]
 ];

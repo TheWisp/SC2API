@@ -94,6 +94,7 @@ var searchData=
   ['disguiseaszerglingwithwings',['DisguiseAsZerglingWithWings',['../namespace_s_c2_a_p_i_1_1_abils.html#ad56bd0bd3ee51ce1f609b985595bcaef',1,'SC2API::Abils']]],
   ['disruptor',['Disruptor',['../namespace_s_c2_a_p_i_1_1_units.html#acb491fde6ce48f0d3635594236b5a4ae',1,'SC2API::Units']]],
   ['disruptorphased',['DisruptorPhased',['../namespace_s_c2_a_p_i_1_1_units.html#a94fdd2ca217bcd50c5f729bc88ef071f',1,'SC2API::Units']]],
+  ['dist',['Dist',['../struct_s_c2_a_p_i_1_1_point.html#a6886d3502f16789a83c479d2f7f4d80b',1,'SC2API::Point']]],
   ['dog',['Dog',['../namespace_s_c2_a_p_i_1_1_units.html#a2d1a8d46ab9a40cda8f16f32a6e016ff',1,'SC2API::Units']]],
   ['dragoonacgluescreendummy',['DragoonACGluescreenDummy',['../namespace_s_c2_a_p_i_1_1_units.html#a3d450e20033e7b5190ca1908699cfa90',1,'SC2API::Units']]],
   ['drone',['Drone',['../namespace_s_c2_a_p_i_1_1_units.html#ae40ad222d3c614c2210604f9e5db17ed',1,'SC2API::Units']]],

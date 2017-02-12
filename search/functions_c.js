@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['remove',['Remove',['../class_s_c2_a_p_i_1_1_unit_group.html#a333e5988ba2780ee23a1c3fbd5020a7f',1,'SC2API::UnitGroup::Remove(Unit inUnit)'],['../class_s_c2_a_p_i_1_1_unit_group.html#a03cd1074ca9d6b0426b8216d7dca6171',1,'SC2API::UnitGroup::Remove(const UnitGroup &amp;inUnitGroup)']]]
+  ['queueorder',['QueueOrder',['../struct_s_c2_a_p_i_1_1_unit.html#a6b3f4ca7a1b459f87c4e03c48b90cdec',1,'SC2API::Unit::QueueOrder()'],['../class_s_c2_a_p_i_1_1_unit_group.html#aeabce7b0362fd360d66b7acc19b46f45',1,'SC2API::UnitGroup::QueueOrder()']]]
 ];

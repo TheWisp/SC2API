@@ -20,6 +20,8 @@ var searchData=
   ['unit',['Unit',['../struct_s_c2_a_p_i_1_1_unit.html',1,'SC2API']]],
   ['unitfilterflag',['UnitFilterFlag',['../namespace_s_c2_a_p_i.html#ae8b29ddf3312c6097d485907359e002d',1,'SC2API']]],
   ['unitgroup',['UnitGroup',['../class_s_c2_a_p_i_1_1_unit_group.html',1,'SC2API']]],
+  ['unittestbase',['UnitTestBase',['../class_s_c2_a_p_i_1_1_unit_test_base.html#af8e2d65a3cad87fcdb9259a2877fd45b',1,'SC2API::UnitTestBase']]],
+  ['unittestbase',['UnitTestBase',['../class_s_c2_a_p_i_1_1_unit_test_base.html',1,'SC2API']]],
   ['unsiege',['Unsiege',['../namespace_s_c2_a_p_i_1_1_abils.html#a005e3a2bcec1e8dd6ed761bc9ab8f1d3',1,'SC2API::Abils']]],
   ['unstoppable',['Unstoppable',['../namespace_s_c2_a_p_i.html#ae8b29ddf3312c6097d485907359e002daf2b19162474f58ec1f3e2f24d2482f67',1,'SC2API']]],
   ['upgradetogreaterspire',['UpgradeToGreaterSpire',['../namespace_s_c2_a_p_i_1_1_abils.html#a93e4947ad45fea67fcfe8d7af088a21f',1,'SC2API::Abils']]],

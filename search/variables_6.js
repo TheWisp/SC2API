@@ -13,6 +13,7 @@ var searchData=
   ['factorytrain',['FactoryTrain',['../namespace_s_c2_a_p_i_1_1_abils.html#a16ddb6e2ac85125036592da722e2c93d',1,'SC2API::Abils']]],
   ['feedback',['Feedback',['../namespace_s_c2_a_p_i_1_1_abils.html#a1d625658b9419768b5e491302b821ac5',1,'SC2API::Abils']]],
   ['fightermode',['FighterMode',['../namespace_s_c2_a_p_i_1_1_abils.html#a1b0e6157ea17349360213394d827ddde',1,'SC2API::Abils']]],
+  ['finished',['Finished',['../class_s_c2_a_p_i_1_1_unit_test_base.html#a6737ecd12e8779b25ec34f1181f94c8a',1,'SC2API::UnitTestBase']]],
   ['firebatacgluescreendummy',['FirebatACGluescreenDummy',['../namespace_s_c2_a_p_i_1_1_units.html#a193e2aed53dc138bde75dabc317e8f8e',1,'SC2API::Units']]],
   ['fleetbeacon',['FleetBeacon',['../namespace_s_c2_a_p_i_1_1_units.html#a392effd1d66ce5dc710107b30c14f772',1,'SC2API::Units']]],
   ['fleetbeaconresearch',['FleetBeaconResearch',['../namespace_s_c2_a_p_i_1_1_abils.html#a43822b3d2d8419c0fe243420f32bcfd8',1,'SC2API::Abils']]],

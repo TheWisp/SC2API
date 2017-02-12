@@ -30,11 +30,13 @@ var searchData=
   ['redstonelavacritterinjuredunburrow',['RedstoneLavaCritterInjuredUnburrow',['../namespace_s_c2_a_p_i_1_1_abils.html#a54867f1645710c130c341495373d04a9',1,'SC2API::Abils']]],
   ['redstonelavacritterunburrow',['RedstoneLavaCritterUnburrow',['../namespace_s_c2_a_p_i_1_1_abils.html#a83d0153868e3e49d91ffb344ff842aa1',1,'SC2API::Abils']]],
   ['refinery',['Refinery',['../namespace_s_c2_a_p_i_1_1_units.html#a5d501bb3378a2006004bd7eda775edf9',1,'SC2API::Units']]],
+  ['registerunittest',['RegisterUnitTest',['../namespace_s_c2_a_p_i.html#a06fda886de903dfbd3aa684762212703',1,'SC2API']]],
   ['releaseinterceptors',['ReleaseInterceptors',['../namespace_s_c2_a_p_i_1_1_abils.html#aec39c89d8686404d9dabd9d64b9b22e7',1,'SC2API::Abils']]],
   ['releaseinterceptorsbeacon',['ReleaseInterceptorsBeacon',['../namespace_s_c2_a_p_i_1_1_units.html#afec6f1176a38275bf0bb6afc404d5ead',1,'SC2API::Units']]],
   ['remove',['Remove',['../class_s_c2_a_p_i_1_1_unit_group.html#a333e5988ba2780ee23a1c3fbd5020a7f',1,'SC2API::UnitGroup::Remove(Unit inUnit)'],['../class_s_c2_a_p_i_1_1_unit_group.html#a03cd1074ca9d6b0426b8216d7dca6171',1,'SC2API::UnitGroup::Remove(const UnitGroup &amp;inUnitGroup)']]],
   ['repair',['Repair',['../namespace_s_c2_a_p_i_1_1_abils.html#aeedd683aeeb0a21eae4c1f4a4ba135f6',1,'SC2API::Abils']]],
   ['replicant',['Replicant',['../namespace_s_c2_a_p_i_1_1_units.html#aaaf4642d3e4ddaeaa99c7b776b20c58a',1,'SC2API::Units']]],
+  ['reporterror',['ReportError',['../class_s_c2_a_p_i_1_1_unit_test_base.html#ae93ef2ab5a3329691f103c8c01ce6639',1,'SC2API::UnitTestBase']]],
   ['repulsorcannonweapon',['RepulsorCannonWeapon',['../namespace_s_c2_a_p_i_1_1_units.html#adadc9957bee25ed3c0b056e59448b005',1,'SC2API::Units']]],
   ['resistant',['Resistant',['../namespace_s_c2_a_p_i.html#ae8b29ddf3312c6097d485907359e002dab79130e932dd6780bab920b66dbf565b',1,'SC2API']]],
   ['resourceblocker',['ResourceBlocker',['../namespace_s_c2_a_p_i_1_1_units.html#af8e5a8e4bfb08a112e265bd8e47d05a2',1,'SC2API::Units::ResourceBlocker()'],['../namespace_s_c2_a_p_i_1_1_abils.html#a72d8bcf6d60b9ab0549ad35050503792',1,'SC2API::Abils::ResourceBlocker()']]],
@@ -54,5 +56,6 @@ var searchData=
   ['roboticsfacility',['RoboticsFacility',['../namespace_s_c2_a_p_i_1_1_units.html#a8cb514ce7e447b76ff6828a26c5777bf',1,'SC2API::Units']]],
   ['roboticsfacilitytrain',['RoboticsFacilityTrain',['../namespace_s_c2_a_p_i_1_1_abils.html#a47dd456df271568e8af2dbcb1d876090',1,'SC2API::Abils']]],
   ['rocks2x2nonconjoined',['Rocks2x2NonConjoined',['../namespace_s_c2_a_p_i_1_1_units.html#a207ca6db7e95b9ee6dfc4dbd633cac6c',1,'SC2API::Units']]],
-  ['roughterrain',['RoughTerrain',['../namespace_s_c2_a_p_i_1_1_units.html#a86df8f137861073af60f75bb9a598bd0',1,'SC2API::Units']]]
+  ['roughterrain',['RoughTerrain',['../namespace_s_c2_a_p_i_1_1_units.html#a86df8f137861073af60f75bb9a598bd0',1,'SC2API::Units']]],
+  ['runtest',['RunTest',['../class_s_c2_a_p_i_1_1_unit_test_base.html#a11171646ccc80ba91e759754588c320e',1,'SC2API::UnitTestBase']]]
 ];
