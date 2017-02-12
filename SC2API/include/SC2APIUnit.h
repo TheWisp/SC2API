@@ -196,10 +196,13 @@ namespace SC2API
         /// Unique integer associated with this unit.
         /// </summary>
         HandleId id = 0;
-        friend bool operator < (const Unit& lhs, const Unit& rhs);
-        friend bool operator > (const Unit& lhs, const Unit& rhs);
-        friend bool operator == (const Unit& lhs, const Unit& rhs);
-        friend bool operator != (const Unit& lhs, const Unit& rhs);
         #pragma endregion
     };
+
+	#pragma region Comparison and hashing
+	SC2API_API bool operator < (const Unit& lhs, const Unit& rhs);
+	SC2API_API bool operator > (const Unit& lhs, const Unit& rhs);
+	SC2API_API bool operator == (const Unit& lhs, const Unit& rhs);
+	SC2API_API bool operator != (const Unit& lhs, const Unit& rhs);
+	#pragma endregion
 }

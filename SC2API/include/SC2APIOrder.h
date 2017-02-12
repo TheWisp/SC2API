@@ -1,5 +1,6 @@
 #pragma once
 #include "SC2API.h"
+#include "SC2APIPoint.h"
 
 namespace SC2API
 {
@@ -29,6 +30,11 @@ namespace SC2API
         /// <param name="targetUnit">Order target unit</param>
         /// <returns>order</returns>
         static Order OrderTargetingUnit(struct Command command, struct Unit targetUnit);
+
+		/// <summary>
+		/// Returns the target point of an order. Empty if the order has no target point.
+		/// </summary>
+		Optional<Point> GetTargetPoint() const;
 
         #pragma region Implementation
     private:

@@ -7,7 +7,12 @@ namespace SC2API
 	/// <summary>
 	/// Returns true when the game is in replay mode.
 	/// </summary>
-	bool GameIsReplay();
+	SC2API_API bool GameIsReplay();
+
+	/// <summary>
+	/// Returns true when the game is single player (Only one client is running the game, so cheats and debugging are possible)
+	/// </summary>
+	SC2API_API bool GameIsSinglePlayer();
 
     #pragma region Utils
 

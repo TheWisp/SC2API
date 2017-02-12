@@ -1,12 +1,14 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
-VisualStudioVersion = 14.0.24720.0
+VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ExampleAI", "ExampleAI\ExampleAI.vcxproj", "{98D30D73-E6A1-43A8-8509-B78134E9118D}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SC2API", "SC2API", "{F14B5842-4E41-441A-8841-EAA3D70FFA18}"
 	ProjectSection(SolutionItems) = preProject
+		SC2API\include\Cheats.h = SC2API\include\Cheats.h
+		SC2API\include\Creator.h = SC2API\include\Creator.h
 		SC2API\include\HandleId.h = SC2API\include\HandleId.h
 		SC2API\include\SC2API.h = SC2API\include\SC2API.h
 		SC2API\include\SC2APICommand.h = SC2API\include\SC2APICommand.h
@@ -19,6 +21,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SC2API", "SC2API", "{F14B58
 		SC2API\include\SC2APIUnitFilterFlag.dependency.h = SC2API\include\SC2APIUnitFilterFlag.dependency.h
 		SC2API\include\SC2APIUnitFilterFlag.h = SC2API\include\SC2APIUnitFilterFlag.h
 		SC2API\include\SC2APIUnitGroup.h = SC2API\include\SC2APIUnitGroup.h
+		SC2API\include\SC2APIUnitTestSystem.h = SC2API\include\SC2APIUnitTestSystem.h
 		SC2API\include\Utils.h = SC2API\include\Utils.h
 	EndProjectSection
 EndProject

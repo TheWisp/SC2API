@@ -67,6 +67,12 @@
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <AdditionalDependencies>SC2API.lib;zycore.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
+    <PostBuildEvent>
+      <Command>xcopy /Y "$(ProjectDir)..\TestMap\*.*" "$(OutputPath)TestMap\"</Command>
+    </PostBuildEvent>
+    <PostBuildEvent>
+      <Message>Copying test map</Message>
+    </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <ClCompile>
@@ -87,10 +93,11 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="dllmain.cpp" />
+    <ClCompile Include="ExampleAI.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="ExampleAI.h" />
+    <ClInclude Include="include_all.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
