@@ -1,3 +1,6 @@
+# DISCONTINUED
+This library is no longer maintained. Please use https://github.com/Blizzard/s2client-api instead.
+
 # SC2API
 
 SC2API is a free C++ framework intended for AI projects to interact with Blizzard's RTS game, Starcraft 2. The library handles game state in a similar way to [BWAPI](https://github.com/bwapi/bwapi) in that information hidden to the local player is not available through the framework.
